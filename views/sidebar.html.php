@@ -6,7 +6,7 @@
       <p><a onclick="showRightSidebar()">Recherche</a></p>
     </div>
     <div class="sidebar-bottom">
-      <p><a href="">MdM</a></p>
+      <p><a target="_blank" href="https://github.com/MargotDem">MdM</a></p>
       <p><a href="mailto:ficticious@adress.com">contact</a></p>
     </div>
   </div>
