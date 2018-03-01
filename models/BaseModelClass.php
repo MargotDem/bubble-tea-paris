@@ -78,7 +78,7 @@ class BaseModelClass {
     $sql = "";
 
     foreach ($newEntryData as $array) {
-      $sql = $sql . "UPDATE $table SET " . $array["column"] . " = :" . $array["column"] . " WHERE id = " . $id . "; ";
+      $sql = $sql . "UPDATE $table SET " . $array[0] . " = :" . $array[1] . " WHERE id = " . $id . "; ";
     }
 
     $sql = substr($sql, 0, -2);
@@ -87,8 +87,8 @@ class BaseModelClass {
 
     try {
       foreach ($newEntryData as $array) {
-        $placeholderValue = ":" . $array['column'];
-        $pdo_statement->bindParam($placeholderValue, $array['value']);
+        $placeholderValue = ":" . $array[0];
+        $pdo_statement->bindParam($placeholderValue, $array[1]);
       }
 
       $pdo_statement->execute();
@@ -104,8 +104,8 @@ class BaseModelClass {
     $placeholderValues = "";
 
     foreach ($newEntryData as $array) {
-      $columns = $columns . $array["column"] . ", ";
-      $placeholderValues = $placeholderValues . ":" . $array["column"] . ", ";
+      $columns = $columns . $array[0] . ", ";
+      $placeholderValues = $placeholderValues . ":" . $array[0] . ", ";
     }
 
     $columns = substr($columns, 0, -2);
@@ -115,8 +115,8 @@ class BaseModelClass {
 
     try {
       foreach ($newEntryData as $array) {
-        $placeholderValue = ":" . $array['column'];
-        $pdo_statement->bindParam($placeholderValue, $array['value']);
+        $placeholderValue = ":" . $array[0];
+        $pdo_statement->bindParam($placeholderValue, $array[1]);
       }
 
       $pdo_statement->execute();

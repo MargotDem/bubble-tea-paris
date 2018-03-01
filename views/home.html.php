@@ -8,7 +8,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-sm-offset-4 home-content">
-              <div class="home-message"><a onClick="showRightSidebar()">Trouvez un bubble tea</a></div>
+              <div class="home-message"><a onclick="showRightSidebar()">Trouvez un bubble tea</a></div>
               <div class="home-img-content">
                 <div class="color-block color-block_1"></div>
                 <div class="color-block color-block_2"></div>

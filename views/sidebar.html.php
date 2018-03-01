@@ -15,7 +15,7 @@
   <div class="sidebar sidebar-right" id="sidebar-right">
     <div class="sidebar-content sidebar-content-right" id="sidebar-content-right">
       <div class="sidebar-top">
-        <a onclick="showSearchSection()">Par arrondissement</a>
+        <a onclick="showSearchSection('borough')">Par arrondissement</a>
       </div>
   </div>
 </div>
@@ -23,7 +23,8 @@
 <div class="search-section" id="search-section">
   <div class="container">
     <div class="row">
-      <div class="col-sm-6 search-form" id="search-form">
+
+      <div class="col-sm-6 search-form search-form-borough" id="search-form-borough">
         <form action="/bubbleteas/index.php" method="get">
           <select name="borough">
             <option selected value="1">1</option>
@@ -35,6 +36,7 @@
           <button type="submit" name="action" value="search">Rechercher</button>
         </form>
       </div>
+
     </div>
   </div>
 </div>
