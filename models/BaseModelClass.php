@@ -1,9 +1,10 @@
 <?php
 class BaseModelClass {
   function initDatabase() {
+    require $_SERVER['DOCUMENT_ROOT'] . "/config.php";
     try {
       $pdo = new PDO(
-        "mysql:dbname=BubbleTea;host=localhost;charset=utf8", 'BubbleTeaUser', 'PleaseFindABetterOne'
+        "mysql:dbname=$DBNAME;host=$DBHOST;charset=utf8", $DBUSER, $DBPASSWORD
       );
     } catch (PDOException $e) {
       echo 'ERREUR : ' . $e->getMessage();

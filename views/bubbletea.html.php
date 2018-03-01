@@ -2,7 +2,7 @@
 
   <div class="wrapper">
     <?php
-    require '../views/sidebar.html.php';
+    require 'sidebar.html.php';
     ?>
 
     <div class="single-bubbletea">
@@ -31,6 +31,17 @@
                     </div>
                   </div>
                 </div>
+                <?php
+                  session_start();
+                  if (isset($_SESSION["id"])) {
+                ?>
+                  <div class="single-bubble-tea-admin">
+                    <a href="/bubbleteas/index.php?action=edit&id=<?php echo $bubble_tea[0]['id']; ?>">Edit</a>
+                    <a href="/bubbleteas/index.php?action=delete&id=<?php echo $bubble_tea[0]['id']; ?>">Delete</a>
+                  </div>
+                <?php
+                  }
+                ?>
               </div>
               <div class="single-bubble-tea-info-additional">
                 <div class="single-bubble-tea-note">

@@ -1,5 +1,7 @@
 <?php require 'htmlHeader.html.php'; ?>
 
+
+
 <div class="wrapper">
     <?php
     require 'views/sidebar.html.php';

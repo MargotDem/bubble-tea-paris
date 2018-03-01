@@ -6,6 +6,19 @@
       <p><a onclick="showRightSidebar()">Recherche</a></p>
     </div>
     <div class="sidebar-bottom">
+      <?php
+        session_start();
+
+        if (isset($_SESSION["id"])) {
+        ?>
+
+          <form method="post" action="/admin/logout.php">
+            <input name='logout' type='submit' value='Log out'/>
+          </form>
+
+        <?php
+        }
+      ?>
       <p><a target="_blank" href="https://github.com/MargotDem">MdM</a></p>
       <p><a href="mailto:ficticious@adress.com">contact</a></p>
     </div>
@@ -17,6 +30,20 @@
       <div class="sidebar-top">
         <a onclick="showSearchSection('borough')">Par arrondissement</a>
       </div>
+      <?php
+        session_start();
+
+        if (isset($_SESSION["id"])) {
+        ?>
+
+        <div class="sidebar-bottom">
+          <a href="/bubbleteas/index.php?action=fetchAll">Voir tous les établissements</a>
+        </div>
+
+        <?php
+        }
+      ?>
+
   </div>
 </div>
 

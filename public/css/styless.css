@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+}
+
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 300px;
+  height: 100%;
+  /* background: #212c35; */
+  background: #082351;
+  position: fixed;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  z-index: 500;
+}
+
+.sidebar-right {
+  background: #a1b1cc;
+  padding-top: 90px;
+  left: 300px;
+  transition: 0.7s;
+  width: 0px;
+  overflow: hidden;
+}
+
+.sidebar-right-show {
+  width: 300px;
+}
+
+.search-section {
+  height: 100%;
+  background: whitesmoke;
+  position: fixed;
+  left: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #505050;
+  font-size: 20px;
+  transition: 1s;
+  width: 0px;
+  overflow: hidden;
+  z-index: 500;
+}
+
+.search-section-show {
+  width: 100%;
+  z-index: 500;
+}
+
+.sidebar a {
+  color: whitesmoke;
+}
+
+.sidebar a:hover {
+  text-decoration: none;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+.sidebar-content {
+  width: 250px;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-content-right {
+  transition: 1s;
+  transition-delay: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.sidebar-content-right-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sidebar-content p {
+  margin: 8px 0px;
+}
+
+.sidebar-title {
+  font-size: 24px;
+  margin-bottom: 15px !important;
+}
+
+.sidebar-bottom input {
+  background-color: white;
+  border: none;
+  color: #212c35;
+  padding: 0px 5px;
+  border-radius: 4px;
+}
+
+.home {
+  width: 100%;
+  height: 100%;
+  background: lavender;
+}
+
+.home-content {
+  /* background-color: whitesmoke; */
+  height: 600px;
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.home-message {
+  position: absolute;
+  top: 250px;
+  right: 300px;
+  font-size: 40px;
+}
+
+.home-message a {
+  color: #505050;
+}
+
+.home-message a:hover {
+  color: grey;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.home-img-content {
+  margin-top: 100px;
+  margin-right: 50px;
+}
+.color-block {
+  width: 250px;
+  height: 70px;
+  background-color: lightgray;
+  margin: 0px 0px 10px 0px;
+}
+
+.search-form {
+  padding: 50px 0px 0px 100px !important;
+  /* background: grey; */
+  height: 600px;
+  transition: 1s;
+  transition-delay: 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+}
+
+.search-form-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.bubbleteas {
+  width: 100%;
+  height: 100%;
+}
+
+.bubble-teas-title {
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.bubbleteas-content {
+  margin: 60px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble-tea-card {
+  width: 650px;
+  height: 200px;
+  background-color: whitesmoke;
+  margin-bottom: 25px;
+  display: flex;
+  box-shadow: 2px 6px 25px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  color: #505050 !important;
+}
+
+.bubble-tea-card:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.bubble-tea-card:hover {
+  box-shadow: 2px 6px 30px rgba(0, 0, 0, 0.2);
+}
+
+.bubble-tea-card-img {
+  height: 100%;
+  /* width: auto; */
+}
+
+.bubble-tea-card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 0px 10px 20px;
+}
+
+.bubble-tea-card-details {
+  font-size: 18px;
+}
+
+.single-bubbletea {
+  width: 100%;
+  height: 720px;
+  background: whitesmoke;
+}
+
+.bubble-tea-map {
+  width: 100%;
+  height: 250px;
+  /* background: white;
+  background-image: url('/public/img/map.png');
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+.single-bubble-tea-info {
+  height: 450px;
+  background: whitesmoke;
+  margin-top: 0px;
+  /* margin: 60px 0px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-bubble-tea-info-main {
+  width: 100%;
+  height: 250px;
+  margin-bottom: 25px;
+  display: flex;
+  color: #505050 !important;
+}
+
+.single-bubble-tea-info-additional {
+  margin-top: 10px;
+  width: 100%;
+  border-top: 1px solid silver;
+  padding-top: 10px;
+}
+
+.single-bubble-tea-img {
+  height: 100%;
+}
+
+.single-bubble-tea-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 0px 10px 20px;
+}
+
+.single-bubble-tea-details {
+  font-size: 22px;
+}
+
+.single-bubble-tea-additional {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.single-bubble-tea-open-times {
+
+}
+
+.single-bubble-tea-other {
+
+}
+
+.single-bubble-tea-note {
+  font-size: 20px;
+}
+
+.comments {
+  height: 600px;
+  background: gainsboro;
+}
+
+.login-form {
+  /* background-color: pink; */
+  height: 30px;
+}
