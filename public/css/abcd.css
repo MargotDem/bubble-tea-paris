@@ -1,4 +1,8 @@
+
 * {
+  -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -56,7 +60,7 @@ body {
   transition: 1s;
   width: 0px;
   overflow: hidden;
-  z-index: 500;
+  z-index: 300 !important;
 }
 
 .search-section-show {
@@ -153,13 +157,37 @@ body {
   height: 70px;
   background-color: lightgray;
   margin: 0px 0px 10px 0px;
+  /* transform:skew(5deg,0deg); */
 }
 
 .color-block_1 {
   background-image: url('http://tastereunion.com/wp-content/uploads/2016/06/BubbleTPlace-12-1024x683.jpg');
-  background-position: center;
-  background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-attachment: fixed;
+  background-position: right;
+}
+
+.color-block_2 {
+  background-image: url('http://tastereunion.com/wp-content/uploads/2016/06/BubbleTPlace-12-1024x683.jpg');
+  background-attachment: fixed;
+  background-position: right;
+}
+
+.color-block_3 {
+  background-image: url('http://tastereunion.com/wp-content/uploads/2016/06/BubbleTPlace-12-1024x683.jpg');
+  background-attachment: fixed;
+  background-position: right;
+}
+
+.color-block_4 {
+  background-image: url('http://tastereunion.com/wp-content/uploads/2016/06/BubbleTPlace-12-1024x683.jpg');
+  background-attachment: fixed;
+  background-position: right;
+}
+
+.color-block_5 {
+  background-image: url('http://tastereunion.com/wp-content/uploads/2016/06/BubbleTPlace-12-1024x683.jpg');
+  background-attachment: fixed;
+  background-position: right;
 }
 
 .search-form {
@@ -314,4 +342,12 @@ body {
 .login-form {
   /* background-color: pink; */
   height: 30px;
+}
+
+.add-form input {
+  display: block;
+}
+
+.edit-form input {
+  display: block;
 }

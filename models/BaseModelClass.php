@@ -79,7 +79,7 @@ class BaseModelClass {
     $sql = "";
 
     foreach ($newEntryData as $array) {
-      $sql = $sql . "UPDATE $table SET " . $array[0] . " = :" . $array[1] . " WHERE id = " . $id . "; ";
+      $sql = $sql . "UPDATE $table SET " . $array[0] . " = :" . $array[0] . " WHERE id = " . $id . "; ";
     }
 
     $sql = substr($sql, 0, -2);

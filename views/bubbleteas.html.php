@@ -16,8 +16,7 @@
           <div class="row">
             <div class="col-sm-8 col-sm-offset-3 bubbleteas-content">
               <?php
-
-              foreach ($bubble_teas as $bubble_tea) {
+                foreach ($bubble_teas as $bubble_tea) {
               ?>
 
                 <a class="bubble-tea-card" href="/bubbleteas/index.php?bubbletea=<?php echo $bubble_tea['id'];?>">
@@ -41,8 +40,17 @@
                 </a>
 
               <?php
-              }
+                }
 
+                session_start();
+
+                if (isset($_SESSION["id"])) {
+              ?>
+                <div>
+                  <a href="index.php?action=add">Ajouter un établissement</a>
+                </div>
+              <?php
+                }
               ?>
             </div>
 
