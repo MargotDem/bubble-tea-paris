@@ -4,7 +4,6 @@ $BubbleTeas = new BubbleTeas();
 session_start();
 
   if (isset($_GET["action"]) && $_GET["action"] === "search") {
-    // $values = [["name", "autre bubble tea"], ["address", "some address yay"]];
 
     $criterion = [["borough", $_GET["borough"]]];
 
@@ -15,7 +14,7 @@ session_start();
   } elseif (isset($_GET['bubbletea'])) {
 
     $bubble_tea = $BubbleTeas->fetchById($_GET['bubbletea']);
-    // var_dump($bubble_tea);
+
     require '../views/bubbletea.html.php';
 
   } elseif (isset($_SESSION["id"]) && isset($_GET["action"]) && $_GET["action"] === "fetchAll") {
